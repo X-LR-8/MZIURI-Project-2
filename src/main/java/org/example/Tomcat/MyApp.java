@@ -1,4 +1,4 @@
-package com.mziuri;
+package org.example.Tomcat;
 
 import org.apache.catalina.LifecycleException;
 import org.apache.catalina.WebResourceRoot;
@@ -9,8 +9,7 @@ import org.apache.catalina.webresources.StandardRoot;
 
 import java.io.File;
 
-public class Application {
-
+public class MyApp {
     public static void main(String[] args) throws LifecycleException {
 
         Tomcat tomcat = new Tomcat();
@@ -32,7 +31,5 @@ public class Application {
 
         tomcat.start();
         tomcat.getServer().await();
-
     }
-
 }
